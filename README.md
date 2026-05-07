@@ -17,6 +17,7 @@ In this project, we are producing forecasts for daily hotel r=oom demand for 17 
 
 ## Metrics used for Evaluation
 
+- ME (Mean Error) 
 - MAE (Mean Absolute Error)
 - RMSE (Root Mean Square Error)
 - MAPE (Mean Absolute Percentage Error)
@@ -50,7 +51,7 @@ LightGBM also perfromed very strong, especially for the MAE metric. This tells u
 In comparison to the more simple models, this model had limited wins. This may be due to the fact that the dataset was small, and neural models often perform better on more data. However, it still provided useful comparison value.
 
 ### AutoNHITS
-This was one of the worst performing models. It did not win very often across some of the different metrics used for evaluation. This shows that it may have not fit the small dataset as well as the models that are more simple.
+This was one of the worst performing models. It did not win very often across some of the different metrics used for evaluation. This shows that it may have not fit the small dataset as well as the models that are more simple. While it scored the best on the bias metric, it still is not very accurate because the bias metric only tells us if it it likely the model will over or under predict. 
 
 ### Chronos
 This model performed well for some hotels, especially under the RMSE metric. This tells us that foundation models can produce good forecasts without being heavily customized. However, Chronos did not clearly dominate the other models as some others did. This shows that foundation models are not always better than traditional or simple approaches.
